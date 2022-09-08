@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  containers: 
+  - name: nginx-container
+    image: nginx
+    ports:
+     - containerPort: 80
+    volumMounts:
+    - name: nginx-vol
+      mountPath: /user/nginx/html
+  - name: sidecar-container
+    image: curlimages/curl
+    command: ["/bin/sh"]
+    args: ['-c',"echo hello from the sidecar container; sleep 300"]

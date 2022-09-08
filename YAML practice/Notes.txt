@@ -1,0 +1,45 @@
+Yaml
+
+1. Yaml is a data serialization language
+2. other data serialization languages are yaml,xml,json
+3. standard format to transfer data
+4. YAML Ain't markup language
+5. file extension .yaml or .yml
+
+
+YAML format compared to others
+- human readable and intuitive
+-------------------------------
+(YAML)
+
+microservices:
+        - app: user-authentication
+          port: 9000
+          version: 1.0
+-----------------------------
+(XML)
+
+<microservices>
+<microservice>
+<app>user-authentication</app>
+<port>9000</port>
+<version>1.0</version>
+</microservice>
+</microservices>
+------------------------------
+(JSON)
+
+{
+    microservices:[
+        {
+            app: "user-authentication",
+            port: 9000,
+            version: "1.0"
+        }
+    ]
+}
+
+----------------------------------
+
+You can use YAML or JSON
+

@@ -1,0 +1,9 @@
+multilineString: |
+  this is a multiline multilineString
+  and this is the next line
+  next line
+
+multilineString-that-should-be-on-same-line: >
+  this is a multiline multilineString,
+  and this is the next line.
+  next line

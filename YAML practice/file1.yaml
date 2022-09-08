@@ -1,0 +1,31 @@
+
+#object attribute
+app: user-authentication
+port: 9000
+version: 1.7
+
+#object with it's attribute
+microservices:
+  #comment here
+ - app: user-authentication
+   port: 9000
+   version: 1.7
+
+#list of object
+ -  app: user-authentication
+    port: 9000
+    version: 1.7
+    deployment: yes
+    versions:
+    #many different version of object
+    - 1.0
+    - 2.0
+    - 2.1
+    #list in diff way
+    ver: [1.0,2.0,2.1]
+
+
+#simple list
+microservicess:
+  - user-authentication
+  - shoping-cart
